@@ -1,0 +1,29 @@
+.ueDoujou{
+  background:linear-gradient(rgba(100, 100, 100, 0.6),rgba(100, 100, 100, 0.6)),url(computer-1873831_1920.png);
+  background-size:1000px;
+  background-position: center;
+  width:700px;
+  height:400px;
+}
+.ueNippou{
+  background:linear-gradient(rgba(100, 100, 100, 0.6),rgba(100, 100, 100, 0.6)),url(kyokafore.jpg);
+  background-size:1000px;
+  background-position: center;
+  width:700px;
+  height:400px;
+}
+.ueRansuu{
+  background:linear-gradient(rgba(100, 100, 100, 0.6),rgba(100, 100, 100, 0.6)),url(dice.jpg);
+  background-size:1000px;
+  background-position: center;
+  width:700px;
+  height:400px;
+}
+.seleSetsu{
+  color:rgb(215, 219, 223); 
+  font-size:20px; 
+  margin:15px;
+}
+.your-class{
+  margin:10px 100px 0px 100px;
+}
