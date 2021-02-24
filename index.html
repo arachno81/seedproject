@@ -2,14 +2,18 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <!-- クローラを呼ばない -->
     <meta name="robots" content="noindex">
     <title>SeedProject</title>
+    <link rel="stylesheet" type="text/css" href="slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="common.css"/>
   </head>
   <body>  
 <!--スタイルシート-->      
     <style>
 body{
-  background-color:rgb(224, 233, 238);
+  background-color:rgb(197, 222, 235);
 }      
 header{
   background-color:#d7fffa;
@@ -29,7 +33,7 @@ header{
 .main1{
   background-size: auto;
   /* グラデーション */
-  background:linear-gradient(to top,rgba(185, 140, 185, 0.7)0%,rgba(114, 172, 179, 0.7)100%),url(kyoka_top.png);
+  background:linear-gradient(to top,rgba(143, 137, 143, 0.7)0%,rgba(114, 172, 179, 0.7)100%),url(kyoka_top.png);
   clear:left;
   padding:150px 200px 150px 200px;
   text-align:center;
@@ -58,8 +62,7 @@ header{
   font-size:20px
 }
 .monTarget{
-  padding:1px 200px 10px 200px;
-  background-color:rgb(235, 213, 238);
+  padding:1px 100px 10px 100px;
   color:rgb(78, 76, 55);
 }
 .mirai{
@@ -180,6 +183,23 @@ padding:150px 0px 150px 0px;
       </section>
       
     </div>
+    <h1 style="font-size:50px;text-align: center; background-color: rgb(241, 241, 241);color:rgb(78, 76, 55); padding:20px 200px 20px 200px;margin:10px 100px 0px 100px;">Contents</h1>
+    <div class="your-class">
+      <div class=ueDoujou>
+        <h1 class="selec">プログラミング道場</h1>
+        <p class="seleSetsu">プログラミングは、あなたの創造性を存分に発揮させる手段となります。<br>あなたのアイデアを形にし、プログラミングスキルを養いましょう！</p>
+      </div>
+      <div class="ueNippou">
+        <h1 class="selec">日報ブログもどき</h1>
+        <p class="seleSetsu">今日一日あなたが起こしたアクションを、この場所に是非まとめてみて下さい。<br>ブログの作成技術も同時に取得できたならば、こんなに素晴らしいことはありません。</p>
+      </div>
+      <div class="ueRansuu">
+        <h1 class="selec">疑似乱数の部屋</h1>
+        <p class="seleSetsu">情報過多の生活にあらがう術のひとつとして、疑似乱数の活用があります。<br>たまに覗いて原点と向き合うことで、逆に新たな出会いが起るかもしれません。</p>
+      </div>
+      </div>
+
+    </div>
     <div class="monTarget">
       <!-- h1にアニメーションを導入https://web.alfactory.co.jp/topics/2019/06/04/341/ -->
       <div class="mirai">
@@ -194,7 +214,7 @@ padding:150px 0px 150px 0px;
       </div>
     </div>
     <main>
-      <h1 style="font-size:50px;text-align: center; background-color: rgb(238, 238, 238);color:rgb(78, 76, 55); padding:30px 100px 30px 100px;margin:0;">Contents</h1>
+<!--       <h1 style="font-size:50px;text-align: center; background-color: rgb(238, 238, 238);color:rgb(78, 76, 55); padding:30px 100px 30px 100px;margin:0;">Contents</h1>
     <div class="contents">
       <div class="proDojo">       
       <a href="progDojo/progDojo.html">
@@ -210,7 +230,7 @@ padding:150px 0px 150px 0px;
         <h1 class="selec">疑似乱数の部屋</h1>
         <p style="color:rgb(215, 219, 223); font-size:20px; margin:15px;">情報過多の生活にあらがう術のひとつとして、疑似乱数の活用があります。<br>たまに覗いて原点と向き合うことで、逆に新たな出会いが起るかもしれません。</p>
       </div>
-    </div>
+    </div> -->
     <h1 style="text-align:center;">現在のタスク</h1>
     <div class="tasuku">
       <ul style="list-style:none;">
@@ -227,6 +247,8 @@ padding:150px 0px 150px 0px;
    <footer>
 
    </footer>
-
+   <script type="text/javascript" src="jquery-3.5.1.js"></script>
+   <script type="text/javascript" src="slick.js"></script>
+   <script type="text/javascript" src="common.js"></script>
   </body>
 </html>
