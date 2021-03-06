@@ -1,3 +1,135 @@
+body{
+  background-color:rgb(197, 222, 235);
+}      
+header{
+  background-color:#d7fffa;
+  height:80px;
+  color:rgb(32, 32, 32);
+  padding:1px;
+}
+.header-logo{
+  height:20px;
+  width:20px;
+  float:left;
+  margin-left:30px;
+}
+.hello{
+  clear:left;
+}
+.main1{
+  background-size: auto;
+  /* グラデーション */
+  background:linear-gradient(to top,rgba(143, 137, 143, 0.7)0%,rgba(114, 172, 179, 0.7)100%),url(kyoka_top.png);
+  clear:left;
+  padding:150px 200px 150px 200px;
+  text-align:center;
+}
+.header-list{
+  padding:0px 50px 0px 0px;
+}
+.raito{
+  list-style:none;
+  float:right;
+  padding:30px 20px 0px 0px;
+}
+.sentence{
+  padding:10px 0px 20px 0px;
+  text-align:center;
+  color:rgb(240, 240, 229);
+  font-size:18px;
+}
+.action{
+  font-size:50px ;
+  color:rgb(240, 240, 229);
+  margin:1px;
+}
+.actionSentense{
+  color:rgb(240, 240, 229);
+  font-size:20px
+}
+.monTarget{
+  padding:1px 100px 10px 100px;
+  color:rgb(78, 76, 55);
+}
+.mirai{
+  padding:1px;
+  margin-top:10px;
+  margin-bottom:10px;
+  text-align: center;
+  background-color: rgb(238, 238, 238)
+}
+.wsSp{
+  margin:50px 100px 50px 100px;
+  padding:100px;
+  text-align:center;
+  background:linear-gradient(to top,rgba(89, 86, 105, 0.7)0%,rgba(48, 69, 78, 0.7)100%),url(SP2F.png);
+  background-position: center;
+  font-size:30px;
+  color:rgb(190, 190, 190);
+}
+.prosetsu{
+  padding:20px;
+  background-color:rgb(238, 238, 238);
+}
+a{
+  text-decoration: none;
+}
+/* リンクの色を常にそのままに */
+a:link,a:visited,a:hover,a:active{
+  color:rgb(37, 37, 37);
+}
+.contents{
+/* コンテンツを全て横並び＋中央揃え */
+margin-left:auto;
+margin-right:auto;
+display:-webkit-flex;
+display:flex;
+-webkit-justify-content:center;
+justify-content:center;
+-webkit-align-items:center;
+align-items:center;
+height:200px;
+padding:150px 0px 150px 0px;
+}
+.proDojo{
+  background:linear-gradient(rgba(100, 100, 100, 0.6),rgba(100, 100, 100, 0.6)),url(computer-1873831_1920.png);
+  background-size:1000px;
+  background-position: center;
+  width:500px;
+  height:500px;
+  padding:10px 0px 10px 0px;
+}
+.selec{
+  font-size:40px;
+  color:rgb(234, 236, 238);
+  margin-top:50px;
+  text-align:center;
+  padding:50px 0px 50px 0px;
+}
+.dBlog{
+  background:linear-gradient(to top,rgba(179, 188, 230, 0.7)0%,rgba(30, 41, 63, 0.7)100%),url(dbrog.jpg);
+  background-size:800px;
+  background-position: center;
+  width:500px;
+  height:500px;
+  padding:10px 0px 10px 0px;
+}
+.rando{
+  background:linear-gradient(to top,rgba(177, 177, 177, 0.7)0%,rgba(43, 43, 43, 0.7)100%),url(dice.jpg);
+  background-size:1000px;
+  background-position: center;
+  width:500px;
+  height:500px;
+  padding:10px 0px 10px 0px;
+}
+.tasuku{
+  text-align:center;
+  margin-right:40px;
+}
+.actionList{
+  text-align: center;
+  padding-top: 20px;
+}
 .ueDoujou{
   background:linear-gradient(rgba(100, 100, 100, 0.6),rgba(100, 100, 100, 0.6)),url(computer-1873831_1920.png);
   background-size:1000px;
