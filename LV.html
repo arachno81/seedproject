@@ -1,0 +1,802 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Input.html</title>
+    <meta name="robots" content="noindex">
+    <style>
+      body{
+        background-color:rgb(245, 231, 215);
+      }
+      .miniClass{
+        font-size:30px;
+        border:5px double rgb(44, 44, 44);
+        background-color: rgb(255, 255, 255);
+      }
+      header{
+        padding:1px;
+        height:300px;
+        background:linear-gradient(to top,rgba(230, 224, 217, 0.7)0%,rgba(122, 70, 6, 0.7)100%);
+        text-align:center;
+      }
+      header h1{
+        font-size:80px;
+        position:relative;
+        top:40px;
+        color:rgb(240, 230, 222);
+        text-shadow:0 5px 5px black;
+      }
+      .inspeClass{
+        /* background:linear-gradient(to right,rgba(238, 224, 209, 0.7)0%,rgba(131, 82, 19, 0.6)100%); */
+        padding:1px;
+        color:rgb(41, 41, 41);
+        text-shadow:5px 7px 8px rgb(231, 231, 231);
+      }
+      .proInfoAll{
+        padding:1px;
+        font-size:20px;
+        margin:0px 100px 0px 100px;
+        background-color:rgb(255, 252, 249);
+        text-align:center;
+      }
+      /* チェックボックスの大きさ変更 */
+      .proInfoAll input[type=checkbox] {
+      width:			20px;
+      height:			20px;
+      -moz-transform:		scale(1.4);
+      -webkit-transform:	scale(1.4);
+      transform:		scale(1.4);
+      }
+      .proInfoAll input[type=text] {
+      width:			150px;
+      height:			20px;
+      }
+      .mainInfo{
+        background-color:rgb(255, 255, 255);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>LOUIS VUITTON</h1>
+    </header>
+    <div class="proInfoAll">
+      <div class="inspeClass">
+        <h1>商品情報</h1>    
+      </div>
+      <div>
+        <p class="miniClass">管理番号</p>
+        <form name="form1" id="id_form1" action="">
+          <p>POS番</p>
+          <input type="text" name="pos" id="id_pos" value="" style="width:400px;height:40px;font-size:30px;">
+          <p>管理番号</p>
+          <input type="text" name="seria" id="id_seria" value="/ETASX" style="width:400px;height:40px;font-size:30px;">
+        </form>
+      </div>
+      <div>        
+        <p class="miniClass">素材-外側</p>
+        <form name="form2" id="id_form2" action="">
+          <input type="checkbox" name="mateOut" value="モノグラム(コーティングキャンバス)">モノグラム
+          <input type="checkbox" name="mateOut" value="ダミエエベヌ(コーティングキャンバス)">ダミエ
+          <input type="checkbox" name="mateOut" value="エピレザー">エピ
+          <input type="checkbox" name="mateOut" value="タイガレザー">タイガ
+          <input type="text" name="mateOutText" value="その他">
+          <input type="button" value="その他" onclick=""/>
+          <p>ここに追加チェックボックスを表示</p>
+        </form>
+      </div>
+      <div>
+        <p class="miniClass">素材-内側</p>
+        <form name="form3" id="id_form3" action="">
+
+          <input type="checkbox" name="mateIn" value="キャンバス">布
+          <input type="checkbox" name="mateIn" value="レザー">レザー
+          <input type="checkbox" name="mateIn" value="コーティングキャンバス">Cキャン
+          <input type="checkbox" name="mateIn" value="アルカンタラ">アルカンタラ
+          <input type="checkbox" name="mateIn" value="ナイロン">ナイロン
+          <input type="checkbox" name="mateIn" value="PVCレザー">PVC
+          <input type="text" name="mateInText" value="その他">
+          <input type="button" value="その他" onclick=""/>
+          <p>ここに追加チェックボックスを表示</p>
+        </form>
+      </div>
+      <div>
+        <p class="miniClass">色-外側</p>
+        <form name="form4" id="id_form4" action="">
+
+          <input type="checkbox" name="colOut" value="ブラック">ブラック
+          <input type="checkbox" name="colOut" value="ホワイト">ホワイト
+          <input type="checkbox" name="colOut" value="レッド">レッド
+          <input type="checkbox" name="colOut" value="ブルー">ブルー
+          <input type="checkbox" name="colOut" value="ボルドー">ボルドー
+          <input type="text" name="colOutText" value="その他">
+          <input type="button" value="その他" onclick=""/>
+          <p>金具</p>
+          <input type="checkbox" name="name_metal" value="ゴールド金具">ゴールド
+          <input type="checkbox" name="name_metal" value="シルバー金具">シルバー
+          <input type="checkbox" name="name_metal" value="ガンメタリック金具">ガンメタ
+          <input type="checkbox" name="name_metal" value="ブラック金具">ブラック
+            <input type="text" name="metal" id="id_metal" value="">
+          
+          <p>ここに追加チェックボックスを表示</p>
+        </form>
+      </div>
+      <div>
+        <p class="miniClass">色-内側</p>
+        <form name="form5" id="id_form5" action="">
+
+          <input type="checkbox" name="colIn" value="ブラック">ブラック
+          <input type="checkbox" name="colIn" value="ホワイト">ホワイト
+          <input type="checkbox" name="colIn" value="レッド">レッド
+          <input type="checkbox" name="colIn" value="ブルー">ブルー
+          <input type="checkbox" name="colIn" value="ボルドー">ボルドー
+          <input type="text" name="colInText" value="その他">
+          <input type="button" value="その他" onclick=""/>
+          <p>ここに追加チェックボックスを表示</p>
+        </form>
+      </div>
+      <div>
+        <p class="miniClass">付属品</p>
+        <form name="form6" id="id_form6" action="">
+          <input type="checkbox" name="att" value="箱">箱
+          <input type="checkbox" name="att" value="保存袋">保存袋
+          <input type="checkbox" name="att" value="ストラップ">ストラップ
+          <input type="checkbox" name="att" value="カデナ">カデナ
+          <input type="checkbox" name="att" value="キー×2">キー×2
+          <input type="checkbox" name="att" value="クロシェット">クロシェット
+        </form>
+      </div>
+      <div>
+        <p class="miniClass">型番･シリアル</p>
+        <form name="form7" id="id_form7" action="">
+          <p>型番</p>
+          <input type="text" name="proNo" id="id_proNo" value="" style="width:400px;height:30px;font-size:20px;">
+        </form>
+          
+        <form name="form7_2" id="id_form7_2" action="">
+          <p>シリアル</p>
+          <input type="text" name="proSeria" id="id_proSeria" value="" style="width:400px;height:30px;font-size:20px;">
+          <p>ここに一旦結果を表示</p>
+        </form>
+      </div>
+      <div>
+        <p class="miniClass">製造国</p>
+        <form name="form8" id="id_form8" action="">
+
+          <input type="checkbox" name="state" value="フランス製">フランス
+          <input type="checkbox" name="state" value="イタリア製">イタリア
+          <input type="checkbox" name="state" value="スペイン製">スペイン
+          <input type="text" name="stateText" id="id_state" value="">その他
+          <p>ここに追加チェックボックスを表示</p>
+        </form>
+     </div>
+     <div>
+      <p class="miniClass">ポケット外側</p>
+      <form name="form8_2" id="id_form8_2" action="">
+
+
+      </form>
+     </div>
+     <div>
+      <p class="miniClass">ポケット内側</p>
+      <form name="form8_3" id="id_form8_3" action="">
+
+
+      </form>
+     </div>
+     <div>
+      <p class="miniClass">備考</p>
+       <form name="form8_4" id="id_form8_4" action="">
+        <input type="text" name="uebiko" id="id_uebiko" value="" style="width:400px;height:30px;font-size:20px;">
+       </form>
+     </div>
+      <div>
+        <p class="miniClass">サイズ</p>
+        <form name="form9" id="id_form9" action="">
+          <p>幅(W)</p>
+          <input type="number" name="sizeW" id="id_sizeW" value="" style="width:400px;height:30px;font-size:20px;">
+        </form>
+        <p>高さ(H)</p>
+        <form name="form9_2" id="id_form9_2" action="">
+          <input type="number" name="sizeH" id="id_sizeH" value="" style="width:400px;height:30px;font-size:20px;">
+        </form>
+        <form name="form9_3" id="id_form9_3" action="">
+          <p>奥行(D)</p>
+          <input type="number" name="sizeD" id="id_sizeD" value="" style="width:400px;height:30px;font-size:20px;">
+        </form>
+      </div>
+      <div class="inspeClass">
+        <h1>商品状態</h1>
+      </div>
+      <div>
+        <p class="miniClass">ランク</p>
+        <p>外側</p>
+        <form name="form10" id="id_form10" action="">
+
+          <input type="checkbox" name="rankOut" value="SAランク">SAランク
+          <input type="checkbox" name="rankOut" value="Aランク">Aランク
+          <input type="checkbox" name="rankOut" value="ABランク">ABランク
+          <input type="checkbox" name="rankOut" value="Bランク">Bランク
+          <input type="checkbox" name="rankOut" value="Cランク">Cランク
+          <input type="checkbox" name="rankOut" value="Cランク">ポケットCランク
+        </form>
+        <p>内側</p>
+        <form name="form11" id="id_form11" action="">
+
+          <input type="checkbox" name="rankIn" value="SAランク">SAランク
+          <input type="checkbox" name="rankIn" value="Aランク">Aランク
+          <input type="checkbox" name="rankIn" value="ABランク">ABランク
+          <input type="checkbox" name="rankIn" value="Bランク">Bランク
+          <input type="checkbox" name="rankIn" value="Cランク">Cランク
+          <input type="checkbox" name="rankIn" value="Cランク">ポケットCランク
+        </form>
+      </div>
+      
+      <div class="nCondition">
+        <p class="miniClass">ボディ</p>
+        <form name="form12" id="id_form12" action="">
+
+          <input type="checkbox" name="cond1" value="擦れ">擦れ
+          <input type="checkbox" name="cond1" value="傷">傷
+          <input type="checkbox" name="cond1" value="染み">染み
+          <input type="checkbox" name="cond1" value="汚れ">汚れ
+          <input type="checkbox" name="cond1" value="日焼け">日焼け
+          <input type="checkbox" name="cond1" value="黒ずみ">黒ずみ
+          <input type="checkbox" name="cond1" value="シワ">シワ
+          <input type="checkbox" name="cond1" value="型崩れ">型崩れ
+          <p>ヌメ革やレザー</p>
+        </form>
+      </div>
+      <div class="nCondition">
+        <p class="miniClass">角</p>
+        <form name="form13" id="id_form13" action="">
+
+          <input type="checkbox" name="cond2" value="擦れ">擦れ
+          <input type="checkbox" name="cond2" value="傷">傷
+          <input type="checkbox" name="cond2" value="染み">染み
+          <input type="checkbox" name="cond2" value="汚れ">汚れ
+          <input type="checkbox" name="cond2" value="日焼け">日焼け
+          <input type="checkbox" name="cond2" value="黒ずみ">黒ずみ
+          <input type="checkbox" name="cond2" value="シワ">シワ
+          <input type="checkbox" name="cond2" value="型崩れ">型崩れ
+          <p>ヌメ革やレザー</p>
+        </form>
+        </div>
+        <div class="nCondition">
+        <p class="miniClass">底</p>
+        <form name="form14" id="id_form14" action="">
+
+          <input type="checkbox" name="cond3" value="擦れ">擦れ
+          <input type="checkbox" name="cond3" value="傷">傷
+          <input type="checkbox" name="cond3" value="染み">染み
+          <input type="checkbox" name="cond3" value="汚れ">汚れ
+          <input type="checkbox" name="cond3" value="日焼け">日焼け
+          <input type="checkbox" name="cond3" value="黒ずみ">黒ずみ
+          <input type="checkbox" name="cond3" value="シワ">シワ
+          <input type="checkbox" name="cond3" value="型崩れ">型崩れ
+          <p>ヌメ革やレザー</p>
+        </form>
+      </div>
+      <div class="nCondition">
+        <p class="miniClass">縁</p>
+        <form name="form15" id="id_form15" action="">
+
+          <input type="checkbox" name="cond4" value="擦れ">擦れ
+          <input type="checkbox" name="cond4" value="傷">傷
+          <input type="checkbox" name="cond4" value="染み">染み
+          <input type="checkbox" name="cond4" value="汚れ">汚れ
+          <input type="checkbox" name="cond4" value="日焼け">日焼け
+          <input type="checkbox" name="cond4" value="黒ずみ">黒ずみ
+          <input type="checkbox" name="cond4" value="シワ">シワ
+          <input type="checkbox" name="cond4" value="型崩れ">型崩れ
+          <p>ヌメ革やレザー</p>
+        </form>
+      </div>
+      <div class="nCondition">
+        <p class="miniClass">ハンドル</p>
+        <form name="form16" id="id_form16" action="">
+
+          <input type="checkbox" name="cond5" value="擦れ">擦れ
+          <input type="checkbox" name="cond5" value="傷">傷
+          <input type="checkbox" name="cond5" value="染み">染み
+          <input type="checkbox" name="cond5" value="汚れ">汚れ
+          <input type="checkbox" name="cond5" value="日焼け">日焼け
+          <input type="checkbox" name="cond5" value="黒ずみ">黒ずみ
+          <input type="checkbox" name="cond5" value="シワ">シワ
+          <input type="checkbox" name="cond5" value="型崩れ">型崩れ
+          <p>ヌメ革やレザー</p>
+        </form>
+      </div>
+      <div class="nCondition">
+        <p class="miniClass">ストラップ</p>
+        <form name="form17" id="id_form17" action="">
+
+          <input type="checkbox" name="cond6" value="擦れ">擦れ
+          <input type="checkbox" name="cond6" value="傷">傷
+          <input type="checkbox" name="cond6" value="染み">染み
+          <input type="checkbox" name="cond6" value="汚れ">汚れ
+          <input type="checkbox" name="cond6" value="日焼け">日焼け
+          <input type="checkbox" name="cond6" value="黒ずみ">黒ずみ
+          <input type="checkbox" name="cond6" value="シワ">シワ
+          <input type="checkbox" name="cond6" value="型崩れ">型崩れ
+          <p>ヌメ革やレザー</p>
+        </form>
+      </div>
+      <div class="nCondition">
+        <p class="miniClass">金具</p>
+        <form name="form18" id="id_form18" action="">
+
+          <input type="checkbox" name="cond7" value="擦れ">擦れ
+          <input type="checkbox" name="cond7" value="傷">傷
+          <input type="checkbox" name="cond7" value="染み">染み
+          <input type="checkbox" name="cond7" value="汚れ">汚れ
+          <input type="checkbox" name="cond7" value="日焼け">日焼け
+          <input type="checkbox" name="cond7" value="黒ずみ">黒ずみ
+          <input type="checkbox" name="cond7" value="シワ">シワ
+          <input type="checkbox" name="cond7" value="型崩れ">型崩れ
+          <p>ヌメ革やレザー</p>
+        </form>
+      </div>
+      <div class="nCondition">
+        <p class="miniClass">内側</p>
+        <form name="form19" id="id_form19" action="">
+
+          <input type="checkbox" name="cond8" value="擦れ">擦れ
+          <input type="checkbox" name="cond8" value="傷">傷
+          <input type="checkbox" name="cond8" value="染み">染み
+          <input type="checkbox" name="cond8" value="汚れ">汚れ
+          <input type="checkbox" name="cond8" value="日焼け">日焼け
+          <input type="checkbox" name="cond8" value="黒ずみ">黒ずみ
+          <input type="checkbox" name="cond8" value="シワ">シワ
+          <input type="checkbox" name="cond8" value="型崩れ">型崩れ
+          <p>ヌメ革やレザー</p>
+        </form>
+      </div>
+      <div>
+        <p>備考</p>
+        <form name="form20" id="id_form20" action="">
+          <input type="text" name="shitabiko" id="id_shitabiko" value="" style="width:400px;height:30px;font-size:20px;">
+        </form>
+      </div>
+
+
+
+
+      <p><input type="button" value="確定" onclick="clickBtn1()" style="width:150px;height:50px; margin-top:40px; margin-bottom:20px;"></p>
+    </div>
+    <div class="mainInfo">
+      <center>
+        <!-- 商品説明 -->
+        <table cellspacing="0" cellpadding="3" border="2">
+          <tbody>
+            <tr>
+              <th colspan="2" bgcolor="#876d4b" width="800"> <font color="#ffffff">
+                [商品説明] </font> </th>
+              </tr>
+              <tr>
+                <th bgcolor="#f4f0e3" width="400">[ブランド]</th>
+                <td colspan="2" width="400">LOUIS VUITTON<br>
+                </td>
+              </tr>
+              <tr>
+                <th bgcolor="#f4f0e3" width="400">[素材-外側]</th>
+                <td colspan="2" width="400"><span id="sozaiOut">-</span><br>
+                </td>
+              </tr>
+              <tr>
+                <th bgcolor="#f4f0e3" width="400">[素材-内側]</th>
+                <td colspan="2" width="400"><span id="sozaiIn"></span><br>
+              </td>
+            </tr>
+            <tr>
+              <th bgcolor="#f4f0e3" width="400">[色-外側]</th>
+              <td colspan="2" width="400"><span id="iroOut"></span><br><span id="kanagu"></span>
+              </td>
+            </tr>
+            <tr>
+              <th bgcolor="#f4f0e3" width="400">[色-内側]</th>
+              <td colspan="2" width="400"><span id="iroIn"></span><br>
+              </td>
+            </tr>
+            <tr>
+              <th bgcolor="#f4f0e3" width="400">[付属品]</th>
+              <td colspan="2" width="400"><span id="huzoku">無し</span></td>
+            </tr>
+            <tr>
+              <th bgcolor="#f4f0e3" width="400">[型番]</th>
+              <td colspan="2" width="400"><span id="kataban"></span><br>
+              </td>
+            </tr>
+            <tr>
+              <th bgcolor="#f4f0e3" width="400">[シリアル刻印]</th>
+              <td colspan="2" width="400"><span id="siriaru"></span><br>
+              </td>
+            </tr>
+            <tr>
+              <th bgcolor="#f4f0e3" width="400">[製造国]</th>
+              <td colspan="2" width="400"><span id="out_state"></span><br>
+              </td>
+            </tr>
+            <tr>
+              <th bgcolor="#f4f0e3" width="400">[ポケット-外側]</th>
+              <td colspan="2" width="400"><br>
+              </td>
+            </tr>
+            <tr>
+              <th bgcolor="#f4f0e3" width="400">[ポケット-内側]</th>
+              <td colspan="2" width="400"><br>
+              </td>
+            </tr>
+            <tr>
+              <th bgcolor="#f4f0e3" width="400">[管理番号]</th>
+              <td colspan="2" width="400"><span id="out_pos">-</span><br><span id="out_senum">-</span>
+              </td>
+            </tr>
+            <tr>
+              <th bgcolor="#f4f0e3" width="400">[備考]</th>
+              <td colspan="2" width="400"><span id="out_uebiko"></span><br>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <!-- サイズ -->
+        <table cellspacing="0" cellpadding="3" border="2">
+          <tbody>
+            <tr>
+              <th colspan="2" bgcolor="#876d4b" width="800"> <font color="#ffffff">
+                [サイズ] </font> </th>
+              </tr>
+              <tr>
+                <th bgcolor="#f4f0e3" width="400">[横]</th>
+                <td colspan="2" width="400"><span id="out_sizeW"></span>cm<br>(<span id="out_sizeW_i"></span>インチ)
+                </td>
+              </tr>
+              <tr>
+                <th bgcolor="#f4f0e3" width="400">[縦]</th>
+                <td colspan="2" width="400"><span id="out_sizeH"></span>cm<br>(<span id="out_sizeH_i"></span>インチ)
+                </td>
+              </tr>
+              <tr>
+                <th bgcolor="#f4f0e3" width="400">[奥行]</th>
+                <td colspan="2" width="400"><span id="out_sizeD"></span>cm<br>(<span id="out_sizeD_i"></span>インチ)
+                </td>
+              </tr>
+              <tr>
+                <th bgcolor="#f4f0e3" width="400">[ハンドル]<br>
+                </th>
+                <td colspan="2" width="400">cm<br>
+                </td>
+              </tr>
+              <tr>
+                <th bgcolor="#f4f0e3" width="400">[ストラップ]<br>
+                </th>
+                <td colspan="2" width="400">cm </td>
+              </tr>
+            </tbody>
+          </table>
+          <br>
+          <!-- 状態 -->
+          <table cellspacing="0" cellpadding="3" border="2" width="800">
+            <tbody>
+              <tr>
+                <th colspan="4" bgcolor="#876d4b" width="800"><font color="#ffffff">[状
+                  態]</font> </th>
+                </tr>
+                <tr>
+                  <th bgcolor="#f4f0e3" width="200">[外側]</th>
+                  <td width="200"><span id="out_rankOut"></span></td>
+                  <th bgcolor="#f4f0e3" width="200">[内側]</th>
+                  <td width="200"><span id="out_rankIn"></span></td>
+                </tr>
+                <tr>
+                  <th colspan="2" bgcolor="#f4f0e3" width="400">[ボディ]</th>
+                  <td colspan="2" width="400"><span id="bodi">-</span><br>
+                  </td>
+                </tr>
+                <tr>
+                  <th colspan="2" bgcolor="#f4f0e3" width="400">[角]</th>
+              <td colspan="2" width="400"><span id="kado">-</span><br>
+              </td>
+            </tr>
+            <tr>
+              <th colspan="2" bgcolor="#f4f0e3" width="400">[底]</th>
+              <td colspan="2" width="400"><span id="out_soko"></span><br>
+              </td>
+            </tr>
+            <tr>
+              <th colspan="2" bgcolor="#f4f0e3" width="400">[縁]</th>
+              <td colspan="2" width="400"><span id="out_huchi"></span><br>
+              </td>
+            </tr>
+            <tr>
+              <th colspan="2" bgcolor="#f4f0e3" width="400">[ハンドル]</th>
+              <td colspan="2" width="400"><span id="out_handoru"></span><br>
+              </td>
+            </tr>
+            <tr>
+              <th colspan="2" bgcolor="#f4f0e3" width="400">[ストラップ]</th>
+              <td colspan="2" width="400"><span id="out_sutorappu"></span><br>
+              </td>
+            </tr>
+            <tr>
+              <th colspan="2" bgcolor="#f4f0e3" width="400">[金具]</th>
+              <td colspan="2" width="400"><span id="out_kanagu"></span><br>
+              </td>
+            </tr>
+            <tr>
+              <th colspan="2" bgcolor="#f4f0e3" width="400">[内側]</th>
+              <td colspan="2" width="400"><span id="out_uchigawa"></span><br>
+              </td>
+            </tr>
+            <tr>
+              <th colspan="2" bgcolor="#f4f0e3" width="400">[備考]</th>
+              <td colspan="2" width="400"><span id="out_shitabiko"></span><br>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <br>
+      </center>
+      <BR>
+        <center>
+          <table cellspacing="0" cellpadding="3" border="2" width="800">
+            <tbody>
+              <tr>
+                <th colspan="4" bgcolor="#876d4b" width="800"> <span style="color: white;">当
+                  店参考状態ランク</span></th>
+                </tr>
+                <tr>
+                  <td width="800">
+                    <div style="text-align: left;"><font size="4"><strong><font size="4"><strong>【</strong></font>Ｎ】
+                      新品</strong></font><font size="4"><strong><font size="4"><strong>　
+                      </strong></font></strong></font><font size="4"><strong><font
+                        
+                        size="4"><strong>【</strong></font>ＡＢ</strong></font><font
+                        
+                        size="4"><strong><font size="4"><strong>】</strong></font>ＡとＢの中
+                        間くらいの使用感</strong></font><font size="4"><strong><font size="4"><strong></strong></font></strong></font></div>
+                        <div style="text-align: left;"><font size="4"><strong><font size="4"><strong>【</strong></font>Ｓ】
+                          新品同様、未使用、展示品　</strong></font><font size="4"><strong><font size="4"><strong>　
+                            【</strong></font>Ｂ</strong></font><font size="4"><strong><font
+                              
+                              size="4"><strong>】</strong></font>使用感が見られる一般的な中古の商品</strong></font><font
+                              
+                              size="4"><strong><font size="4"><strong><br>
+                              </strong></font></strong></font></div>
+                              <div style="text-align: left;"><font size="4"><strong><font size="4"><strong>【</strong></font>ＳＡ</strong></font><font
+                          
+                                size="4"><strong><font size="4"><strong>】</strong></font>ほぼ新品同
+                          様の商品</strong></font><font size="4"><strong><font size="4"><strong>　
+                          </strong></font></strong></font><font size="4"><strong><font
+                            
+                            size="4"><strong>　　　　　【</strong></font>ＢＣ</strong></font><font
+                            
+                            size="4"><strong><font size="4"><strong>】</strong></font>ＢとＣの中
+                            間くらいの使用感</strong></font><font size="4"><strong><font size="4"><strong></strong></font></strong></font></div>
+                            <div style="text-align: left;"><font size="4"><strong><font size="4"><strong>【</strong></font>Ａ</strong></font><font
+                              
+                              size="4"><strong><font size="4"><strong>】</strong></font>僅かな使用
+                              感が見られる商品　　　　</strong></font><font size="4"><strong><font size="4"><strong>【</strong></font>Ｃ</strong></font><font
+                              
+                              size="4"><strong><font size="4"><strong>】</strong></font>かなりの使
+                              用感、傷が見られる中古の商品</strong></font><font size="4"><strong><font size="4"><strong></strong></font></strong></font></div>
+                            </td>
+                          </tr>
+          </tbody>
+        </table>
+      </center>
+    </div>
+    <div class="cminch">
+      <p>幅<span></span></p>
+
+
+    </div>
+      
+      
+      <script>
+       /*  function clickKari(){
+          target = document.getElementById("senum");
+          target.innerText = document.forms.id_form1.id_seria.value;
+        } */
+      function clickBtn1(){
+        /* target = document.getElementById("senum");
+        target.innerText = document.forms.id_form1.id_textBox1.value;
+        https://www.ipentec.com/document/javascript-get-textbox-value */
+
+        /* テキストエリア情報の反映 */
+        target = document.getElementById("out_pos");
+        target.innerText = document.forms.id_form1.id_pos.value;
+        target = document.getElementById("out_senum");
+        target.innerText = document.forms.id_form1.id_seria.value;
+        target = document.getElementById("kataban");
+        target.innerText = document.forms.id_form7.id_proNo.value;
+        target = document.getElementById("siriaru");
+        target.innerText = document.forms.id_form7_2.id_proSeria.value;
+        target = document.getElementById("out_state");
+        target.innerText = document.forms.id_form8.id_state.value;
+        target = document.getElementById("out_sizeW");
+        target.innerText = document.forms.id_form9.id_sizeW.value;
+        target = document.getElementById("out_sizeW_i");
+        target.innerText = document.forms.id_form9.id_sizeW.value / 2.54;
+        target.innerText = Math.floor(target.innerText *100)/100;
+
+        target = document.getElementById("out_sizeH");
+        target.innerText = document.forms.id_form9_2.id_sizeH.value;
+        target = document.getElementById("out_sizeH_i");
+        target.innerText = document.forms.id_form9_2.id_sizeH.value / 2.54;
+        target.innerText = Math.floor(target.innerText *100)/100;
+        
+        target = document.getElementById("out_sizeD");
+        target.innerText = document.forms.id_form9_3.id_sizeD.value;
+        target = document.getElementById("out_sizeD_i");
+        target.innerText = document.forms.id_form9_3.id_sizeD.value / 2.54;
+        target.innerText = Math.floor(target.innerText *100)/100;
+        
+        target = document.getElementById("out_uebiko");
+        target.innerText = document.forms.id_form8_4.id_uebiko.value;
+
+        target = document.getElementById("out_shitabiko");
+        target.innerText = document.forms.id_form20.id_shitabiko.value;
+        
+        
+        
+        /* チェックボックスエリア情報の反映 */
+        const arr3=[];
+        const mateOut=document.getElementsByName("mateOut");        
+        for(let i=0;i<mateOut.length;i++){
+          if(mateOut[i].checked){
+            arr3.push(mateOut[i].value);
+          }
+        }
+        document.getElementById("sozaiOut").textContent=arr3;
+        
+        const arr4=[];
+        const mateIn=document.getElementsByName("mateIn");        
+        for(let i=0;i<mateIn.length;i++){
+          if(mateIn[i].checked){
+            arr4.push(mateIn[i].value);
+          }
+        }
+        document.getElementById("sozaiIn").textContent=arr4;
+        
+        const arr5=[];
+        const colOut=document.getElementsByName("colOut");        
+        for(let i=0;i<colOut.length;i++){
+          if(colOut[i].checked){
+            arr5.push(colOut[i].value);
+          }
+        }
+        document.getElementById("iroOut").textContent=arr5;
+        
+        const arr6=[];
+        const name_metal=document.getElementsByName("name_metal");        
+        for(let i=0;i<name_metal.length;i++){
+          if(name_metal[i].checked){
+            arr6.push(name_metal[i].value);
+          }
+        }
+        document.getElementById("kanagu").textContent=arr6;
+        
+        const arr7=[];
+        const colIn=document.getElementsByName("colIn");        
+        for(let i=0;i<colIn.length;i++){
+          if(colIn[i].checked){
+            arr7.push(colIn[i].value);
+          }
+        }
+        document.getElementById("iroIn").textContent=arr7;
+        
+        const arr8=[];
+        const att=document.getElementsByName("att");        
+        for(let i=0;i<att.length;i++){
+          if(att[i].checked){
+            arr8.push(att[i].value);
+          }
+        }
+        document.getElementById("huzoku").textContent=arr8;
+        
+        const arr9=[];
+        const state=document.getElementsByName("state");        
+        for(let i=0;i<state.length;i++){
+          if(state[i].checked){
+            arr9.push(state[i].value);
+          }
+        }
+        document.getElementById("out_state").textContent=arr9;
+
+        const arr10=[];
+        const rankOut=document.getElementsByName("rankOut");        
+        for(let i=0;i<rankOut.length;i++){
+          if(rankOut[i].checked){
+            arr10.push(rankOut[i].value);
+          }
+        }
+        document.getElementById("out_rankOut").textContent=arr10;
+
+        const arr11=[];
+        const rankIn=document.getElementsByName("rankIn");        
+        for(let i=0;i<rankIn.length;i++){
+          if(rankIn[i].checked){
+            arr11.push(rankIn[i].value);
+          }
+        }
+        document.getElementById("out_rankIn").textContent=arr11;
+
+        const arr12=[];
+        const cond3=document.getElementsByName("cond3");        
+        for(let i=0;i<cond3.length;i++){
+          if(cond3[i].checked){
+            arr12.push(cond3[i].value);
+          }
+        }
+        document.getElementById("out_soko").textContent=arr12;
+
+        const arr13=[];
+        const cond4=document.getElementsByName("cond4");        
+        for(let i=0;i<cond4.length;i++){
+          if(cond4[i].checked){
+            arr13.push(cond4[i].value);
+          }
+        }
+        document.getElementById("out_huchi").textContent=arr13;
+
+        const arr14=[];
+        const cond5=document.getElementsByName("cond5");        
+        for(let i=0;i<cond5.length;i++){
+          if(cond5[i].checked){
+            arr14.push(cond5[i].value);
+          }
+        }
+        document.getElementById("out_handoru").textContent=arr14;
+
+        const arr15=[];
+        const cond6=document.getElementsByName("cond6");        
+        for(let i=0;i<cond6.length;i++){
+          if(cond6[i].checked){
+            arr15.push(cond6[i].value);
+          }
+        }
+        document.getElementById("out_sutorappu").textContent=arr15;
+
+        const arr16=[];
+        const cond7=document.getElementsByName("cond7");        
+        for(let i=0;i<cond7.length;i++){
+          if(cond7[i].checked){
+            arr16.push(cond7[i].value);
+          }
+        }
+        document.getElementById("out_kanagu").textContent=arr16;
+
+        const arr17=[];
+        const cond8=document.getElementsByName("cond8");        
+        for(let i=0;i<cond8.length;i++){
+          if(cond8[i].checked){
+            arr17.push(cond8[i].value);
+          }
+        }
+        document.getElementById("out_uchigawa").textContent=arr17;
+
+        
+        const arr=[];
+        const cond1=document.getElementsByName("cond1");
+        for(let i=0;i<cond1.length;i++){
+          if(cond1[i].checked){
+            arr.push(cond1[i].value);
+          }
+        }
+        document.getElementById("bodi").textContent=arr;
+        
+        const arr2=[];
+        const cond2=document.getElementsByName("cond2");
+        for(let i=0;i<cond2.length;i++){
+          if(cond2[i].checked){
+            arr2.push(cond2[i].value);
+          }
+        }
+        document.getElementById("kado").textContent=arr2;
+      }
+      
+      </script>
+  </body>
+</html>
