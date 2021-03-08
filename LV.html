@@ -2,7 +2,6 @@
 <html>
   <head>
     <title>Input.html</title>
-    <meta name="robots" content="noindex">
     <style>
       body{
         background-color:rgb(245, 231, 215);
@@ -52,6 +51,11 @@
       }
       .mainInfo{
         background-color:rgb(255, 255, 255);
+      }
+      .DL{
+        text-align:center;
+        padding:30px;
+        
       }
     </style>
   </head>
@@ -363,7 +367,7 @@
 
       <p><input type="button" value="確定" onclick="clickBtn1()" style="width:150px;height:50px; margin-top:40px; margin-bottom:20px;"></p>
     </div>
-    <div class="mainInfo">
+    <div class="mainInfo" id="id_mainInfo">
       <center>
         <!-- 商品説明 -->
         <table cellspacing="0" cellpadding="3" border="2">
@@ -587,8 +591,8 @@
         </table>
       </center>
     </div>
-    <div class="cminch">
-      <p>幅<span></span></p>
+    <div class="DL">
+      <input type="button" id="id_DL" value="ダウンロード" onclick="clickBtn2()" style="width:150px; height:50px; font-size:20px;">
 
 
     </div>
@@ -607,6 +611,8 @@
         /* テキストエリア情報の反映 */
         target = document.getElementById("out_pos");
         target.innerText = document.forms.id_form1.id_pos.value;
+        /* const posNum = target.innerText;
+        alert(posNum); */
         target = document.getElementById("out_senum");
         target.innerText = document.forms.id_form1.id_seria.value;
         target = document.getElementById("kataban");
@@ -795,6 +801,21 @@
           }
         }
         document.getElementById("kado").textContent=arr2;
+      }
+
+      function clickBtn2(){
+        var conf = window.confirm("伝票情報をダウンロードしますか？");
+        if(conf){
+          target = document.getElementById("out_pos");
+          target.innerText = document.forms.id_form1.id_pos.value;
+          const posNum = target.innerText;
+          let blob = new Blob([id_mainInfo.innerHTML],{type:"text/plan"});
+          let link = document.createElement('a');
+          link.href = URL.createObjectURL(blob);
+          link.download = posNum +'.txt';
+          link.click();
+
+        }
       }
       
       </script>
