@@ -166,3 +166,12 @@ padding:150px 0px 150px 0px;
 .your-class{
   margin:10px 0px 0px 0px;
 }
+.CU{
+  background:linear-gradient(rgba(221, 221, 221, 0.6),rgba(172, 172, 172, 0.6)),url(lets.png);
+  background-position: center;
+  margin:30px 100px 30px 100px;
+  padding: 30px 100px 30px 100px;
+}
+.konbini{
+  text-align: center;
+}
