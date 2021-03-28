@@ -19,9 +19,11 @@ header{
 .main1{
   background-size: auto;
   /* グラデーション */
-  background:linear-gradient(to top,rgba(143, 137, 143, 0.7)0%,rgba(114, 172, 179, 0.7)100%),url(kyoka_top.png);
+  background:linear-gradient(to top,rgba(141, 141, 141, 0.7)0%,rgba(163, 163, 163, 0.7)100%),url(ji27.png);
+  background-position:left;
+  background-size:1700px;
   clear:left;
-  padding:150px 200px 150px 200px;
+  padding:200px 100px 200px 100px;
   text-align:center;
 }
 .header-list{
